@@ -29,6 +29,11 @@
   ::selection { background: var(--accent, #D8FB4F); color: #0C0C0C; }
   @keyframes grr-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @keyframes grr-marq-rev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @media (max-width: 640px) {
+    .grr-nav-links { flex-direction: column !important; align-items: stretch !important; width: 100%; gap: 0 !important; }
+    .grr-nav-links > .grr-nav-item { width: 100%; opacity: 1 !important; padding: 14px 4px !important; border-top: 1px solid rgba(237,231,216,0.12); }
+    .grr-nav-links > .grr-nav-cta { margin-top: 10px; text-align: center; }
+  }
 </style>
 </helmet>
 <div data-screen-label="Landing" style="background:#0C0C0C; color:#EDE7D8; font-family:'Archivo',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
@@ -36,11 +41,12 @@
   <!-- NAV -->
   <nav style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; row-gap:12px; padding:18px 32px; background:rgba(12,12,12,0.82); backdrop-filter:blur(10px); border-bottom:1px solid rgba(237,231,216,0.12);">
     <a href="#top" style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:22px; letter-spacing:0.02em; color:#EDE7D8; text-decoration:none; line-height:1; white-space:nowrap;">GRR<span style="color:var(--accent,#D8FB4F);">R</span>LHOOD</a>
-    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,28px); flex-wrap:wrap; row-gap:10px;">
+    <div class="grr-nav-links" style="display:flex; align-items:center; gap:clamp(12px,3vw,28px); flex-wrap:wrap; row-gap:10px;">
       <a href="#transitions" style="display:none; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" class="grr-navlink">Transitions</a>
-      <a href="#circles" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">Circles</a>
-      <a href="#stories" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">Stories</a>
-      <a href="#join" style="font-family:'Space Mono',monospace; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#0C0C0C; background:var(--accent,#D8FB4F); text-decoration:none; padding:11px 18px; border-radius:2px; white-space:nowrap;" style-hover="transform:translateY(-1px);">JOIN THE GIRLHOOD</a>
+      <a href="#circles" class="grr-nav-item" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">Circles</a>
+      <a href="#stories" class="grr-nav-item" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">Stories</a>
+      <a href="Manifesto.dc.html" class="grr-nav-item" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">Manifesto</a>
+      <a href="#join" class="grr-nav-cta" style="font-family:'Space Mono',monospace; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#0C0C0C; background:var(--accent,#D8FB4F); text-decoration:none; padding:11px 18px; border-radius:2px; white-space:nowrap;" style-hover="transform:translateY(-1px);">JOIN THE GIRLHOOD</a>
     </div>
   </nav>
 
