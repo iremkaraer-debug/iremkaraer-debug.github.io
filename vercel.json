@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/manifesto", "destination": "/Manifesto.dc.html" },
+    { "source": "/home", "destination": "/Grrrlhood.dc.html" }
+  ]
+}

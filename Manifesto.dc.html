@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Manifesto — GRRRLHOOD</title>
+<meta name="description" content="We were never meant to do it alone. A manifesto for women in transition — what grrrlhood believes, and why the in-between shouldn't be a private failure to manage quietly.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Manifesto — GRRRLHOOD">
+<meta property="og:description" content="We were never meant to do it alone. A manifesto for women in transition.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Manifesto — GRRRLHOOD">
+<meta name="twitter:description" content="We were never meant to do it alone. A manifesto for women in transition.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwQzBDMEMiLz48dGV4dCB4PSIzMyIgeT0iNDciIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjQwIiBmaWxsPSIjRDhGQjRGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SPC90ZXh0Pjwvc3ZnPgo=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --accent: #D8FB4F; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #0C0C0C; }
+  ::selection { background: var(--accent, #D8FB4F); color: #0C0C0C; }
+  @keyframes grr-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+</style>
+</helmet>
+<div data-screen-label="Manifesto" style="background:#0C0C0C; color:#EDE7D8; font-family:'Archivo',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; row-gap:12px; padding:18px 32px; background:rgba(12,12,12,0.82); backdrop-filter:blur(10px); border-bottom:1px solid rgba(237,231,216,0.12);">
+    <a href="Grrrlhood.dc.html" style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:22px; letter-spacing:0.02em; color:#EDE7D8; text-decoration:none; line-height:1; white-space:nowrap;">GRR<span style="color:var(--accent,#D8FB4F);">R</span>LHOOD</a>
+    <div style="display:flex; align-items:center; gap:clamp(12px,3vw,28px); flex-wrap:wrap; row-gap:10px;">
+      <a href="Grrrlhood.dc.html" style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#EDE7D8; text-decoration:none; opacity:0.78; white-space:nowrap;" style-hover="opacity:1;">&larr; Back home</a>
+      <a href="Grrrlhood.dc.html#join" style="font-family:'Space Mono',monospace; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#0C0C0C; background:var(--accent,#D8FB4F); text-decoration:none; padding:11px 18px; border-radius:2px; white-space:nowrap;" style-hover="transform:translateY(-1px);">Join the waitlist</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header style="position:relative; padding:clamp(56px,10vw,140px) 32px clamp(36px,5vw,64px); overflow:hidden;">
+    <video ref="{{ heroVideoRef }}" autoplay muted loop playsinline style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.55;"></video>
+    <div style="position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(12,12,12,0.55) 0%, rgba(12,12,12,0.35) 45%, rgba(12,12,12,0.92) 100%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; z-index:1; background-image:repeating-linear-gradient(0deg, rgba(12,12,12,0.18) 0, rgba(12,12,12,0.18) 1px, transparent 1px, transparent 3px); pointer-events:none; mix-blend-mode:multiply;"></div>
+    <div style="max-width:1320px; margin:0 auto; position:relative; z-index:2;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:clamp(24px,4vw,40px); flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <span style="width:9px; height:9px; background:var(--accent,#D8FB4F); border-radius:50%; display:inline-block;"></span>
+          <span style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#9C968A;">The manifesto</span>
+        </div>
+        <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#6E695E;">EST. 2026 — N°001</span>
+      </div>
+      <h1 aria-label="grrrlhood" style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(44px,14.2vw,205px); line-height:0.82; letter-spacing:-0.04em; margin:0; color:#EDE7D8; white-space:nowrap;">GRR<span style="color:var(--accent,#D8FB4F);">R</span>LHOOD</h1>
+      <p style="font-family:'Bricolage Grotesque',sans-serif; font-weight:600; font-size:clamp(18px,2.4vw,30px); line-height:1.1; letter-spacing:-0.01em; margin:clamp(20px,3vw,34px) 0 0; color:#C7C0B1; max-width:640px; text-wrap:balance;">We were never meant to do it <span style="color:var(--accent,#D8FB4F);">alone</span>. A manifesto for women in transition.</p>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div style="background:var(--accent,#D8FB4F); color:#0C0C0C; padding:14px 0; overflow:hidden; border-top:1px solid #0C0C0C; border-bottom:1px solid #0C0C0C;">
+    <div data-grr-marquee-track style="display:flex; width:max-content; animation:grr-marq 30s linear infinite; will-change:transform;">
+      <span style="font-family:'Bricolage Grotesque',sans-serif; font-weight:700; font-size:clamp(18px,2.6vw,30px); white-space:nowrap;">NO PERFORMING&nbsp;&nbsp;✳&nbsp;&nbsp;NO HIGHLIGHT REELS&nbsp;&nbsp;✳&nbsp;&nbsp;NO DOING IT ALONE&nbsp;&nbsp;✳&nbsp;&nbsp;JUST WOMEN, IN IT TOGETHER&nbsp;&nbsp;✳&nbsp;&nbsp;</span>
+      <span style="font-family:'Bricolage Grotesque',sans-serif; font-weight:700; font-size:clamp(18px,2.6vw,30px); white-space:nowrap;" aria-hidden="true">NO PERFORMING&nbsp;&nbsp;✳&nbsp;&nbsp;NO HIGHLIGHT REELS&nbsp;&nbsp;✳&nbsp;&nbsp;NO DOING IT ALONE&nbsp;&nbsp;✳&nbsp;&nbsp;JUST WOMEN, IN IT TOGETHER&nbsp;&nbsp;✳&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- LEDE -->
+  <section style="padding:clamp(56px,8vw,112px) 32px;">
+    <div style="max-width:900px; margin:0 auto;">
+      <p style="font-family:'Bricolage Grotesque',sans-serif; font-weight:500; font-size:clamp(19px,2.2vw,30px); line-height:1.35; letter-spacing:-0.01em; margin:0; text-wrap:pretty;">Somewhere along the way, we were sold the lie that growing up means going it alone. That the messy middle — the move, the breakup, the layoff, the loss — is a private failure to manage quietly.<br><br>It isn't. <span style="color:var(--accent,#D8FB4F);">It never was.</span> Every woman is always in transition. grrrlhood is the room where we stop pretending otherwise.</p>
+    </div>
+  </section>
+
+  <!-- TENETS -->
+  <section style="background:#EDE7D8; color:#0C0C0C; padding:clamp(56px,8vw,120px) 32px;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <p style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#5A5448; margin:0 0 clamp(36px,5vw,64px);">// What we believe</p>
+      <div style="display:flex; flex-direction:column;">
+
+        <div data-reveal style="display:grid; grid-template-columns:90px 1fr; gap:clamp(16px,3vw,48px); align-items:start; padding:clamp(28px,4vw,44px) 0; border-top:1px solid #0C0C0C;">
+          <span style="font-family:'Space Mono',monospace; font-size:14px; color:#5A5448;">01</span>
+          <div><h3 style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(22px,2.8vw,36px); line-height:1.05; letter-spacing:-0.015em; margin:0 0 12px; text-wrap:balance;">Transition is not a crisis. It's the condition.</h3><p style="font-family:'Archivo',sans-serif; font-size:clamp(16px,1.6vw,18px); line-height:1.55; margin:0; max-width:680px; color:#3A352D;">You are not broken for being between things. The in-between is where every becoming happens — we just refuse to do it in the dark.</p></div>
+        </div>
+
+        <div data-reveal style="display:grid; grid-template-columns:90px 1fr; gap:clamp(16px,3vw,48px); align-items:start; padding:clamp(28px,4vw,44px) 0; border-top:1px solid #0C0C0C;">
+          <span style="font-family:'Space Mono',monospace; font-size:14px; color:#5A5448;">02</span>
+          <div><h3 style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(22px,2.8vw,36px); line-height:1.05; letter-spacing:-0.015em; margin:0 0 12px; text-wrap:balance;">Proximity beats advice.</h3><p style="font-family:'Archivo',sans-serif; font-size:clamp(16px,1.6vw,18px); line-height:1.55; margin:0; max-width:680px; color:#3A352D;">The woman three weeks ahead of you is worth more than a thousand think-pieces. We match on what you're living, not what you like.</p></div>
+        </div>
+
+        <div data-reveal style="display:grid; grid-template-columns:90px 1fr; gap:clamp(16px,3vw,48px); align-items:start; padding:clamp(28px,4vw,44px) 0; border-top:1px solid #0C0C0C; border-bottom:1px solid #0C0C0C;">
+          <span style="font-family:'Space Mono',monospace; font-size:14px; color:#5A5448;">03</span>
+          <div><h3 style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(22px,2.8vw,36px); line-height:1.05; letter-spacing:-0.015em; margin:0 0 12px; text-wrap:balance;">Small rooms over big audiences.</h3><p style="font-family:'Archivo',sans-serif; font-size:clamp(16px,1.6vw,18px); line-height:1.55; margin:0; max-width:680px; color:#3A352D;">No feed to perform for. No follower count. Just a few women who notice when you go quiet and show up when it counts.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PULLQUOTE -->
+  <section style="padding:clamp(64px,10vw,150px) 32px;">
+    <div style="max-width:1100px; margin:0 auto; text-align:center;">
+      <p style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(34px,7vw,104px); line-height:0.9; letter-spacing:-0.03em; margin:0; text-wrap:balance;">GROW UP. GROW SIDEWAYS. GROW BACK.<br><span style="color:var(--accent,#D8FB4F);">JUST DON'T DO IT ALONE.</span></p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:18px; margin-top:clamp(36px,5vw,60px);">
+        <a href="Grrrlhood.dc.html#join" style="font-family:'Bricolage Grotesque',sans-serif; font-weight:700; font-size:17px; color:#0C0C0C; background:var(--accent,#D8FB4F); text-decoration:none; padding:16px 28px; border-radius:2px;" style-hover="transform:translateY(-2px);">Join the waitlist &rarr;</a>
+        <span style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.08em; color:#6E695E;">— THE GRRRLHOOD, EST. 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#0C0C0C; color:#EDE7D8; padding:clamp(40px,5vw,64px) 32px; border-top:1px solid rgba(237,231,216,0.12);">
+    <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; align-items:center;">
+      <a href="Grrrlhood.dc.html" style="font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:20px; color:#EDE7D8; text-decoration:none;">GRR<span style="color:var(--accent,#D8FB4F);">R</span>LHOOD</a>
+      <span style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.06em; color:#6E695E;">© 2026 GRRRLHOOD — built by women in transition, for women in transition.</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:1600},&quot;heroVideoUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#D8FB4F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#D8FB4F&quot;,&quot;#B8A1FF&quot;,&quot;#3DE1FF&quot;,&quot;#FF5A1F&quot;,&quot;#E8FF59&quot;]}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.heroVideoRef = React.createRef();
+  }
+
+  syncHeroVideo() {
+    const v = this.heroVideoRef && this.heroVideoRef.current;
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
+    const src = this.props.heroVideoUrl;
+    if (src) {
+      if (v.getAttribute('src') !== src) { v.setAttribute('src', src); v.load(); }
+      v.style.display = '';
+      const p = v.play && v.play();
+      if (p && p.catch) p.catch(() => {});
+    } else {
+      v.removeAttribute('src');
+      v.style.display = 'none';
+    }
+  }
+
+  componentDidMount() {
+    const accent = this.props.accentColor;
+    if (accent) document.documentElement.style.setProperty('--accent', accent);
+    this.syncHeroVideo();
+  }
+
+  componentDidUpdate(prev) {
+    if (prev && prev.accentColor !== this.props.accentColor && this.props.accentColor) {
+      document.documentElement.style.setProperty('--accent', this.props.accentColor);
+    }
+    if (!prev || prev.heroVideoUrl !== this.props.heroVideoUrl) {
+      this.syncHeroVideo();
+    }
+  }
+
+  renderVals() { return { heroVideoRef: this.heroVideoRef }; }
+}
+</script>
+</body>
+</html>
